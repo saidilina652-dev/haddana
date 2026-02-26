@@ -1,6 +1,4 @@
 import logo from "./assets/logo.png";
-import vexaLogo from "./assets/vexa.png";
-import promovideo from "./assets/promovideo.mp4";
 import { FaInstagram, FaFacebookF, FaTiktok, FaPhone, FaEnvelope, FaBuilding } from "react-icons/fa";
 import React, { useState, useEffect } from "react";
 import "./index.css";
@@ -244,7 +242,7 @@ const totalItems = cart.reduce((total, item) => total + item.quantity, 0);
         {/* Navbar */}
        <header className={`navbar ${scrolled ? "scrolled" : ""}`}>
           <div className="logo-box">
-            <img src={logo} alt="Logo" className="logo-img" />
+            <img src="/logo.png" alt="Logo" className="logo-img" />
 
             <h2 className="logo-text">HADDANA PHARMACIE</h2>
           </div>
@@ -428,7 +426,7 @@ const totalItems = cart.reduce((total, item) => total + item.quantity, 0);
 
   <div className="video-frame">
     <video
-      src={promovideo}
+      src="/promovideo.mp4"
       autoPlay
       loop
       controls
@@ -624,7 +622,7 @@ const totalItems = cart.reduce((total, item) => total + item.quantity, 0);
     rel="noopener noreferrer"
     className="vexa-credit"
   >
-    <img src={vexaLogo} alt="Agence Vexa" className="vexa-logo" />
+    <img src="/Vexa.png" alt="Agence Vexa" className="vexa-logo" />
     <span className="vexa-text">Site by Agence Vexa</span>
   </a>
 </div>
